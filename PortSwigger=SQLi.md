@@ -16,5 +16,5 @@
 - `--`：SQL 注释符，将原语句后面的 `AND released = 1` 注释掉，从而绕过对未发布产品的限制。
 ## 4. 最终结果
 修改后的数据包发送后，成功绕过了限制，页面回显了所有产品（包括未发布的产品），并弹出了 **Congratulations, you solved the lab!** 提示。
-![通关截图](你的截图文件名.png) 
-*(记得把截图保存在同级目录下并修改这里的文件名)*
+<img width="2560" height="1600" alt="burp_repeater_mac_ua 2026-11-14 175351" src="https://github.com/user-attachments/assets/4e47febd-db33-43cf-a5f0-268180730481" />
+<img width="2560" height="1600" alt="01-lab-solved-congratulations" src="https://github.com/user-attachments/assets/f5b1f481-da66-4257-bc96-6be65eff8681" />

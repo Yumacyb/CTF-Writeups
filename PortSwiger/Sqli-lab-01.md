@@ -3,7 +3,7 @@
 ## 1. 靶场信息
 - **平台**: PortSwigger Web Security Academy
 - **关卡**: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
-- **目标**: 利用漏洞绕过原本的过滤条件，提取出数据库中未发布的隐藏商品（如 "Cat Grin"）。
+- **目标**: 利用漏洞绕过原本的过滤条件，提取出数据库中未发布的隐藏商品（如 "Dancing In The Dark"）。
 
 ## 2. 漏洞原理与 Payload 拆解
 该漏洞存在于商品分类的 URL 参数中。后台原 SQL 语句推测为：
@@ -26,8 +26,6 @@
 
 ## 5. Python 自动化脚本转化
 为提升效率，我使用 `requests` 库编写了自动化脚本（位于我的 `Security-Scripts` 仓库），实现了从发包到结果判定的自动化。
-![Python脚本运行成功](Images/lab1_python_success.png)
+<img width="2560" height="1600" alt="lab1_python_success" src="https://github.com/user-attachments/assets/be4a99c4-da62-493e-a189-2d16f4ce51fd" />
 *（观察点：终端输出 `[+] SQL injection successful`，证明自动化脚本成功判断出 "Dancing In The Dark" 关键字存在，完美复现了手工渗透过程。）*
-为提升效率，我使用 `requests` 库编写了自动化脚本（位于我的 `Security-Scripts` 仓库），实现了从发包到结果判定的自动化。
-![Python脚本运行成功](Images/lab1_python_success.png)
-*（观察点：终端输出 `[+] SQL injection successful`，证明自动化脚本成功判断出 "Cat Grin" 关键字存在，完美复现了手工渗透过程。）*
+
